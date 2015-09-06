@@ -2,7 +2,7 @@ var fs = require('fs');
 var _  = require('lodash');
 
 var parseFile = function(filename, fields, callback){
-  fs.readFile(filename, 'utf8', function(err, area){
+  fs.readFile(require.resolve(filename), 'utf8', function(err, area){
     if(err) return callback(err);
     var lines = area.split('\n').filter(function(line){
       return !!line.trim() && !/^#/.test(line);
