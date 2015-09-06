@@ -1,9 +1,11 @@
 ## china-area ![NPM version](https://img.shields.io/npm/v/china-area.svg?style=flat)
 
+Provide administrative regional structure in China
+
 ### Installation
 
 ```bash
-$ npm install china-area
+$ npm install china-area --save
 ```
 
 ### Example

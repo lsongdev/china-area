@@ -1,9 +1,9 @@
 {
   "name": "china-area",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "author": "lsong",
   "license": "MIT",
@@ -11,8 +11,20 @@
     "china",
     "area"
   ],
-  "description": "",
+  "description": "Provide administrative regional structure in China",
   "dependencies": {
     "lodash": "^3.10.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song940/china-area.git"
+  },
+  "bugs": {
+    "url": "https://github.com/song940/china-area/issues"
+  },
+  "homepage": "https://github.com/song940/china-area#readme"
 }
