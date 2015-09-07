@@ -24,7 +24,7 @@ module.exports = function(callback){
       err && callback(err);
       var groupedLinked = _.groupBy(linked, 'level');
       Object.keys(groupedLinked).sort().reverse().forEach(function(groupKey){
-        var key  = { '2': 'city', '3': 'dist' }[ groupKey ];
+        var key  = { '2': 'cities', '3': 'districts' }[ groupKey ];
         groupedLinked[ groupKey ].forEach(function(item){
           var from  = _.find(area, { id: item.from });
           var to    = _.find(area, { id: item.to });
