@@ -28,10 +28,10 @@ module.exports = function(callback){
         groupedLinked[ groupKey ].forEach(function(item){
           var from  = _.find(area, { id: item.from });
           var to    = _.find(area, { id: item.to });
-          if(to.level != 1){ // to must be a top-level.
+          // if(to.level != 1){ // to must be a top-level.
             from[ key ] = from[ key ] || [];
             from[ key ].push(_.cloneDeep(to));
-          }
+          // }
         });
       });
 
